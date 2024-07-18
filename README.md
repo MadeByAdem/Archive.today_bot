@@ -1,4 +1,4 @@
-# Archive.today Bot
+# Archive.today Telegram Bot
 
 This project is a simple Telegram bot that receives URLs from users and responds with the latest archived version of the page using Archive.today. If the URL has not been archived before, the bot will provide a link to archive it.
 
