@@ -26,7 +26,7 @@ This project is a simple Telegram bot that receives URLs from users and responds
 
 1. **Clone the repository:**
     ```bash
-    git clone https://github.com/yourusername/archive_bot.git
+    git clone https://github.com/MadeByAdem/Archive.today_bot
     cd archive_bot
     ```
 
