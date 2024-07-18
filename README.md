@@ -103,3 +103,14 @@ Bot: Welcome to Archive.today Bot. Send a URL, and you'll receive the latest arc
 
 User: https://example.com
 Bot: https://archive.today/newest/https://example.com
+```	
+
+## Environment Variables
+
+- `BOTKEY`: Your Telegram bot key. This should be kept secret and never shared.
+
+## Contributing
+Feel free to submit issues or pull requests if you have suggestions for improvements or new features. Please follow the existing coding style.
+
+## License
+This project is licensed under the Custom License. See the [LICENSE](LICENSE) file for more details.
