@@ -1,0 +1,12 @@
+[Unit]
+Description=Archive.today Bot
+After=network.target
+
+[Service]
+ExecStart=/your/path/to/archive_bot/venv/bin/python /your/path/to/archive_bot/archive_bot.py
+WorkingDirectory=/your/path/to/archive_bot
+User=root
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
