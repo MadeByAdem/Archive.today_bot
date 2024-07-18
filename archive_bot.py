@@ -1,8 +1,14 @@
 import telebot
 import re
 import os
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
+
 
 botkey = os.getenv('BOTKEY')
+print(botkey)
 bot = telebot.TeleBot(botkey)
 
 
