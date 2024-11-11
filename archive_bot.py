@@ -17,6 +17,11 @@ def get_archive_url(url):
     match = re.search(r"(?P<url>https?://[^\s]+)", url)
     # If a URL is found, append the archive.today base URL to it
     if match:
+        # igonore instagram, facebook, twitter, tiktok
+        if  'archive' in url or'instagram' in url or 'facebook' in url or 'twitter' in url or 'tiktok' in url or 'x.com' in url or 'youtu.be' in url or 'youtube' in url:
+            return None
+        
+        
         archive_url = 'https://archive.today/newest/'  # Archive.today base URL
         input_modified = f'{archive_url}{match.group("url")}'  # Append URL to base URL
         return input_modified
@@ -43,7 +48,8 @@ def handle_input(message):
                 bot.reply_to(message, output)
             else:
                 # Reply with a message indicating that no valid URL was found
-                bot.reply_to(message, "No valid URL found in the message.")
+                # bot.reply_to(message, "No valid URL found in the message.")
+                return
         except Exception as e:
             # Print the error and reply with an error message
             print(f"Error fetching the URL: {e}")
